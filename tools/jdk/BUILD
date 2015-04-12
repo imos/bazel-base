@@ -1,19 +1,21 @@
 package(default_visibility = ["//visibility:public"])
 
-filegroup(
-    name = "jni_header",
-    srcs = ["//external:jni_header"],
-)
-
-filegroup(
-    name = "jni_md_header-darwin",
-    srcs = ["//external:jni_md_header-darwin"],
-)
-
-filegroup(
-    name = "jni_md_header-linux",
-    srcs = ["//external:jni_md_header-linux"],
-)
+# TODO(imos): Temporary remove the following targets because they depend on a
+# jdk symbolic link, which is a machine-specific symbolic link.
+# filegroup(
+#     name = "jni_header",
+#     srcs = ["//external:jni_header"],
+# )
+# 
+# filegroup(
+#     name = "jni_md_header-darwin",
+#     srcs = ["//external:jni_md_header-darwin"],
+# )
+# 
+# filegroup(
+#     name = "jni_md_header-linux",
+#     srcs = ["//external:jni_md_header-linux"],
+# )
 
 filegroup(
     name = "java",
