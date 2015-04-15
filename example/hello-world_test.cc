@@ -1,5 +1,5 @@
+#include "base/test.h"
 #include "example/hello-world.h"
-#include "third_party/gtest/gtest.h"
 
 class HelloWorldTest : public testing::Test {};
 

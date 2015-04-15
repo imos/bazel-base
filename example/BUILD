@@ -19,6 +19,6 @@ cc_test(
     srcs = ["hello-world_test.cc"],
     deps = [
         ":hello-world-lib",
-        "//third_party/gtest:gtest_main",
+        "//base:test_main",
     ],
 )
