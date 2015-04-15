@@ -95,6 +95,9 @@ cc_library(
         "utilities.h",
         "vlog_is_on.cc",
     ],
+    hdrs = [
+        "logging.h",
+    ],
     deps = [
         "//third_party/gflags",
     ],
